@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Elementos compuestos</title>
+  </head>
+
+  <body>
+    <h1>Cotización de persianas</h1>
+
+    <img
+      src="https://zame-blinds.com.mx/wp-content/uploads/2021/11/Persianas_sheer-2021-1024x1024.png"
+      alt="Persianas sheer-elegance"
+      width="350px"
+      height="350px"
+    /><br /><br />
+
+    <!-- Labels / Etiquetas -->
+    <label for="Input1"> ¿A quién cotizamos?</label>
+    <br />
+    <!-- Entradas / Inputs -->
+    <input type="text" id="Input1" name="Input1" placeholder="Nombre" />
+    <br /><br />
+
+    <label for="tel1">Teléfono/celular</label><br />
+    <input
+      type="tel"
+      id="tel1"
+      name="tel1"
+      maxlength="10"
+    /><br /><br /><!-- MAXIMA LONGITUD DE INPUT -->
+
+    <label for="correo1">Correo</label><br />
+    <input
+      type="email"
+      id="correo1"
+      name="correo1"
+      placeholder="tucorreo@algo.com"
+    /><br /><br />
+
+    <hr />
+    <!-- Tipos de Inputs -->
+    <h2>Selecciona tipo de producto</h2>
+    <label for="producto">Tipo de producto</label>
+    <select id="producto" name="producto">
+      <option value="Persianas">Persianas</option>
+      <option value="Cortinas">Cortinas</option>
+      <option value="Toldos">Toldos</option>
+      <option value="PersianasATM">Persiana Motorizada</option>
+      <option value="CortinasATM">Cortina Motorizada</option>
+      <option value="ToldoATM">Toldo Motorizado</option></select
+    ><br /><br />
+
+    <h3>Select tela</h3>
+    <label for="telaSheer">Elige tela de la sheer</label><br />
+    <input list="telaSheer" />
+    <datalist id="telaSheer">
+      <option value="Regular"></option>
+      <option value="Wood Look"></option>
+      <option value="Linen"></option>
+      <option value="Acordian"></option>
+      <option value="NetWood look"></option>
+    </datalist>
+    <br /><br />
+
+    <label for="ancho1">Ancho de persiana</label><br />
+    <input type="number" id="ancho1" name="ancho1" /><br /><br />
+
+    <label for="alto1">Alto de persiana</label><br />
+    <input type="number" id="alto1" name="alto1" /><br /><br />
+
+    <h3>Selecciona accesorios</h3>
+    <br />
+    <input type="checkbox" id="Accesorio1" name="Accesorio1" value="facia" />
+    <label for="Accesorio1">Facia</label><br />
+    <input type="checkbox" id="Accesorio2" name="Accesorio2" value="Motor" />
+    <label for="Accesorio2">Motor</label><br />
+    <input type="checkbox" id="Accesorio3" name="Accesorio3" value="Soporte" />
+    <label for="Accesorio3">Soporte adicional</label><br /><br />
+
+    <h3>Lado de control</h3>
+    <br />
+    <input type="radio" id="derecha" name="ladoControl" value="derecha" />
+    <label for="derecha">Derecha</label><br />
+    <input type="radio" id="izquierda" name="ladoControl" value="izquierda" />
+    <label for="izquierda">Izquierda</label><br />
+    <input type="radio" id="derechoInv" name="ladoControl" value="derechoInv" />
+    <label for="derechoInv">Derecho invertido</label><br />
+    <input
+      type="radio"
+      id="izquierdoInv"
+      name="ladoControl"
+      value="izquierdoInv"
+    />
+    <label for="izquierdoInv">Izquierdo invertido</label><br />
+    <br />
+
+    <hr />
+
+    <h2>Input de Fecha</h2>
+    <br />
+    <h3>Agenda tu cita para cotizar</h3>
+    <br />
+    <input type="date" id="fecha1" name="fecha1" /><br />
+    <input type="datetime-local" id="fecha2" name="fecha2" /><br />
+    <input type="week" id="fecha3" name="fecha3" /><br />
+    <input type="time" id="fecha4" name="fecha4" /><br />
+    <input type="month" id="fecha5" name="fecha5" /><br /><br />
+
+    <hr />
+
+    <h2>Input de Fecha</h2>
+    <br />
+    <h3>Agenda tu cita para instalación</h3>
+    <br />
+    <input type="date" id="fecha1" name="fecha1" /><br />
+    <input type="datetime-local" id="fecha2" name="fecha2" /><br />
+    <input type="week" id="fecha3" name="fecha3" /><br />
+    <input type="time" id="fecha4" name="fecha4" /><br />
+    <input type="month" id="fecha5" name="fecha5" /><br /><br />
+
+    <hr />
+    <!-- Formularios -->
+    <h2>Ejemplo de Formulario</h2>
+    <form action="/accion.js" id="form1" method="post">
+      <label for="nombre">Nombre:</label>
+      <input type="text" id="nombre" name="nombre" /><br /><br />
+      <input type="submit" value="Submit" />
+      <input type="reset" />
+    </form>
+
+    <label for="apellido">Apellido:</label>
+    <input type="text" id="apellido" name="apellido" form="form1" />
+  </body>
+</html>
